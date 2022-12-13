@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <h1>
+          Compound Interest Calculator
+        </h1>
+      </header>
+      <div class="form">
+        <div id="left-container">
+          <div class="prompt">
+            <h3>Principal:<br /><input type="text" id="principal" /></h3>
+          </div>
+          <div class="prompt">
+            <h3>
+              Interest Rate (Percentage):<br /><input
+                type="number"
+                id="interest-rate"
+                min="0"
+              />
+            </h3>
+          </div>
+          <div class="prompt">
+            <h3>Number of Times Compounded (Per Year):<br /></h3>
+            <input type="number" id="times-compounded" min="0" />
+          </div>
+          <div class="prompt">
+            <h3>Total Number of Years:</h3>
+            <input type="number" id="years" min="0" /><br />
+          </div>
+          <button id="calc-btn">Calculate</button>
+          <button id="reset">Reset</button>
+          <p>
+            <span id="name-span"></span>Your compound interest is: <br />
+            <span id="interest"></span>
+          </p>
+        </div>
+      </div>
+      <div id="image-one" class="grid-item left-transform">
+        <img
+          src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW9uZXl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+          alt="plant growing with coins as soil"
+          title="plant growing with coins as soil"
+        />
+      </div>
+      <div id="image-two" class="grid-item right-transform">
+        <img
+          src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+          alt="bills from various currencies"
+          title="bills from various currencies"
+        />
+      </div>
+      <div id="image-three" class="grid-item left-transform">
+        <img
+          src="https://images.unsplash.com/photo-1611695267521-9891f56679a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3VpbmVhJTIwcGlnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          alt="guinea pig sitting on paperwork"
+          title="guinea pig sitting on
+        paperwork"
+        />
+      </div>
+      <div id="image-four" class="grid-item right-transform">
+        <img
+          src="https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt="drawing of investment graph"
+          title="drawing of investment graph"
+        />
+      </div>
+      <footer>
+        <p>
+          Link to CodeSandbox:
+          <a
+            href="https://codesandbox.io/s/compound-interest-calculator-loxvgn?file=/index.html"
+            >Source Code</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+body {
+  background-image: linear-gradient(
+    #e2c2c6,
+    #b9929f,
+    #9c528b,
+    #610f7f,
+    #2f0147
+  );
+}
+
+h1,
+header,
+footer,
+p,
+button,
+input,
+.form,
+.prompt {
+  font-family: "DM Sans", sans-serif;
+  font-weight: normal;
+  color: #2f0147;
+}
+
+h1 {
+  text-shadow: 2px 1px #b9929f;
+}
+
+body,
+h1,
+h3,
+h4 {
+  margin: 0px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+p {
+  text-align: center;
+  padding: 5px;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+button,
+input {
+  border: solid #9c528b 2px;
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+button {
+  color: ivory;
+  background-color: #2f0147;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: ivory;
+  color: #2f0147;
+  transition: 0.25s ease-in;
+}
+
+input {
+  padding: 3px;
+}
+
+header,
+footer,
+.form,
+.grid-item {
+  border: solid #2f0147 3px;
+  margin: 8px;
+  background-color: ivory;
+  border-radius: 10px;
+}
+
+.prompt,
+header {
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+}
+
+.grid-item {
+  transition: 1.5s ease;
+}
+
+.grid-item:hover {
+  padding: 20px;
+}
+
+.left-transform {
+  transform: rotate(-0.01turn);
+}
+
+.right-transform {
+  transform: rotate(0.01turn);
+}
+
+#image-one {
+  grid-area: image-one;
+}
+
+#image-two {
+  grid-area: image-two;
+}
+
+#image-three {
+  grid-area: image-three;
+}
+
+#image-four {
+  grid-area: image-four;
+}
+
+.form,
+#left-container,
+#right-container {
+  display: flex;
+}
+
+.form,
+#left-container {
+  justify-content: center;
+}
+
+#left-container,
+#right-container {
+  flex-direction: column;
+}
+
+.form {
+  grid-area: form;
+  flex-direction: row;
+}
+
+#left-container {
+  text-align: center;
+}
+
+#right-container {
+  align-items: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-areas:
+    "header header header"
+    "image-one form image-two"
+    "image-three form image-four"
+    "footer footer footer";
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 12vh 38vh 38vh 12vh;
+}
